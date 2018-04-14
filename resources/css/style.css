@@ -6,7 +6,6 @@ html {
 
 body {
   font-family: Helvetica;
-  /*border: 1px solid red;*/
   line-height: 1.4;
 }
 
@@ -25,8 +24,6 @@ body {
     padding: 1rem 0;
     width: 100%;
     margin-top: 1rem;
-    /*max-width: 53.333rem;*/
-    /*border: 1px solid yellow;*/
   }
 
 #header .container .logo, #footer .container .logo {
@@ -34,8 +31,6 @@ body {
   position: relative;
   align-items: center;
   flex-grow: 1;
-  /*width: 100%;*/
-  /*border: 1px solid yellow;*/
 }
 
 #header .logo img, #footer .logo img {
@@ -44,7 +39,6 @@ body {
     height: 1.5rem;
     display: block;
     margin-right: 1rem;
-    /*border: 1px solid yellow;*/
   }
 
 /* HEADER */
@@ -52,7 +46,6 @@ body {
 #header .container {
     background-color: cadetblue;
     max-width: 53.33333rem;
-    /*max-width: 960px;*/
   }
 
 #header .container .logo {
@@ -75,7 +68,6 @@ body {
     background-color: azure;
     padding: 4rem 0 4rem 4rem;
     max-width: 57.33333rem;
-    /*max-width: 1032px;*/
 }
 
 #footer .container .logo {
@@ -99,7 +91,6 @@ body {
     background-size: cover;
     height: 30rem;
     width: 100%;
-    /*border: 1px solid blue;*/
   }
 
 #content1 {
@@ -110,8 +101,6 @@ body {
   width: 57.33333rem;
   justify-content: flex-end;
   margin-top: 10rem;
-  /*width: 996px;*/
-  /*border: 1px solid blue;*/
 }
 
 
@@ -148,14 +137,9 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    /*width: 30%;*/
-    /*justify-content: center;*/
-    /*margin: 0 10px;*/
 }
 
 #bottom_main_container .boxes .box.row1 {
-    /*width: 30%;*/
-    /*margin: 0 6rem;*/
     margin: 0 3rem;
     height: 8rem;
     justify-content: space-between;
@@ -198,10 +182,6 @@ body {
     display: block;
     max-height: 100%;
     width: 3.5rem;
-    /*max-width: 100%;
-    height: 9rem;*/
-    /*height: auto;*/
-    /*padding: 2rem 0;*/
 }
 
 #bottom_main_container .box_image2 img, #bottom_main_container .box_image3 img {
