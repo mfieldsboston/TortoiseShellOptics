@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 html {
   font-size: 18px;
   line-height: 1.4;
@@ -8,51 +10,35 @@ body {
   /*border: 1px solid red;*/
 }
 
-#top_main_container, #bottom_main_container {
-    display: flex;
-    flex-direction: column;
-}
+/* HEADER & FOOTER STYLES */
 
-#top_main_container {
-    background-image: url(../images/glasses-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 30rem;
-    width: 100%;
-    /*border: 1px solid blue;*/
-  }
-
-#header {
+#header, #footer {
   display: flex;
   width: 100%;
 }
 
-#header .container {
+#header .container, #footer .container {
     display: flex;
     position: relative;
-    max-width: 960px;
-    /*max-width: 53.333rem;*/
     margin: 0 auto;
     height: 1rem;
     padding: 1rem 0;
     width: 100%;
-    background-color: cadetblue;
     margin-top: 1rem;
+    /*max-width: 53.333rem;*/
     /*border: 1px solid yellow;*/
   }
 
-#header .container .logo {
+#header .container .logo, #footer .container .logo {
   display: flex;
   position: relative;
-  /*width: 100%;*/
-  color: white;
   align-items: center;
   flex-grow: 1;
+  /*width: 100%;*/
   /*border: 1px solid yellow;*/
 }
 
-#header .logo img {
+#header .logo img, #footer .logo img {
     padding-left: 2rem;
     max-width: 100%;
     height: 1.5rem;
@@ -60,6 +46,18 @@ body {
     margin-right: 1rem;
     /*border: 1px solid yellow;*/
   }
+
+/* HEADER */
+
+#header .container {
+    background-color: cadetblue;
+    max-width: 53.33333rem;
+    /*max-width: 960px;*/
+  }
+
+#header .container .logo {
+  color: white;
+}
 
 #header nav span {
     display: inline-block;
@@ -71,16 +69,49 @@ body {
     text-decoration: none;
 }
 
+/* FOOTER */
+
+#footer .container {
+    background-color: azure;
+    padding: 4rem 0 4rem 4rem;
+    max-width: 57.33333rem;
+    /*max-width: 1032px;*/
+}
+
+#footer .container .logo {
+  color: black;
+}
+
+/* UPPER CONTENT BOX (OVER MAIN PICTURE) AND BOTTOM CONTENT BOX */
+
+#top_main_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* UPPER CONTENT BOX (OVER MAIN PICTURE) */
+
+#top_main_container {
+    background-image: url(../images/glasses-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    /*border: 1px solid blue;*/
+  }
+
 #content1 {
   display: flex;
   position: relative;
   margin: 0 auto;
   height: auto;
-  width: 55.333rem;
-  /*width: 996px;*/
-  /*border: 1px solid blue;*/
+  width: 57.33333rem;
   justify-content: flex-end;
   margin-top: 10rem;
+  /*width: 996px;*/
+  /*border: 1px solid blue;*/
 }
 
 
@@ -97,9 +128,84 @@ body {
   line-height: 1.2;
 }
 
+/* BOTTOM CONTENT BOX */
+
 #bottom_main_container {
-    height: 15rem;
-    width: 100%;
-    background-color: azure;
-    /*border: 1px solid blue;*/
+    height: auto;
+}
+
+#bottom_main_container .boxes .row1_wrapper, #bottom_main_container .boxes .row2_wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 57.333rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+#bottom_main_container .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /*width: 30%;*/
+    /*justify-content: center;*/
+    /*margin: 0 10px;*/
+}
+
+#bottom_main_container .boxes .box.row1 {
+    /*width: 30%;*/
+    /*margin: 0 6rem;*/
+    margin: 0 3rem;
+    height: 8rem;
+    justify-content: space-between;
+}
+
+#bottom_main_container .boxes .box.row1 h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottom_main_container .boxes .box.row2 {
+    width: 35%;
+    align-items: flex-start;
+}
+
+#bottom_main_container .boxes .philosophy {
+  margin-right: 2.5rem;
+}
+
+#bottom_main_container .boxes .appointments {
+  margin-left: 2.5rem;
+}
+
+#bottom_main_container .boxes .box.row2 h3 {
+    color: white;
+    background-color: cadetblue;
+    width: 10rem;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    margin: 3rem 0 1rem 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#bottom_main_container .boxes .box.row2.philosophy p {
+    margin-bottom: 5rem;
+}
+
+#bottom_main_container .box_image1 img {
+    display: block;
+    max-height: 100%;
+    width: 3.5rem;
+    /*max-width: 100%;
+    height: 9rem;*/
+    /*height: auto;*/
+    /*padding: 2rem 0;*/
+}
+
+#bottom_main_container .box_image2 img, #bottom_main_container .box_image3 img {
+    display: block;
+    max-height: 100%;
+    width: 5rem;
 }
