@@ -2,12 +2,12 @@
 
 html {
   font-size: 18px;
-  line-height: 1.4;
 }
 
 body {
   font-family: Helvetica;
   /*border: 1px solid red;*/
+  line-height: 1.4;
 }
 
 /* HEADER & FOOTER STYLES */
